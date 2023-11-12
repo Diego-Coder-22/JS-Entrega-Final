@@ -1,0 +1,22 @@
+/** variables, reset, mixing, extend **/
+@import "./utilities/variables";
+@import "./utilities/mixing";
+@import "./base/reset";
+@import "./utilities/extend";
+
+/** Relacionado al codigo **/
+@import "./layout/header";
+@import "./layout/contenido-home";
+@import "./layout/about-us";
+@import "./layout/productos";
+@import "./layout/plantaciones";
+@import "./layout/contacto";
+@import "./layout/carrito";
+@import "./layout/footer";
+@import "./layout/error-404";
+
+/** Media Query **/
+@import "./layout/MediaQ/media1024";
+@import "./layout/MediaQ/media768";
+@import "./layout/MediaQ/media320";
+

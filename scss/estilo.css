@@ -1,0 +1,1012 @@
+/** variables, reset, mixing, extend **/
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  /* border:1px solid red;*/
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.productos-section-top .productos .producto .producto-agregar:hover, .productos-section-top .productos .producto .producto-agregar, .productos-section-top .container-boton .boton-categoria.active, .productos-section-top .container-boton .boton-categoria, .summer .cards .card a, .section-content .section-content-text a {
+  text-decoration: none;
+  background-color: #ffbf91;
+  border: none;
+  color: white;
+  padding: 1rem;
+  margin: 2rem 4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/** Relacionado al codigo **/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.header .logo {
+  width: 6rem;
+}
+.header .class-menu #check {
+  display: none;
+}
+.header .class-menu .checkbtn .menu-icon {
+  display: none;
+}
+.header .class-menu .checkbtn .menu-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+}
+.header .class-menu .menu-list {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.header .class-menu .menu-list .menu-item a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .class-menu .menu-list .menu-item a .logo-li {
+  width: 2rem;
+}
+.header .class-menu .menu-list .menu-item a:hover {
+  color: #ffbf91;
+}
+
+.section-top {
+  background-image: url("../asset/img/aceites.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding-block: 10rem;
+}
+.section-top .section-top-text {
+  text-align: center;
+}
+.section-top .section-top-text h1 {
+  color: white;
+  font-size: 4rem;
+  text-shadow: 1px 1px 3px black;
+}
+.section-top .section-top-text h2 {
+  font-family: "Handlee", cursive;
+  color: #ffbf91;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+.section-content {
+  display: flex;
+  padding: 2rem;
+}
+.section-content .section-content-text h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+.section-content .section-content-text img {
+  margin-left: 6rem;
+}
+.section-content .section-content-text p {
+  padding: 2rem;
+}
+.section-content .section-content-text a:hover {
+  background-color: #fd8f41;
+  transition: all 0.3s;
+}
+.section-content .section-content-image {
+  display: flex;
+  align-items: center;
+}
+.section-content .section-content-image img {
+  width: 100%;
+}
+
+.grid {
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item1 item2" "item1 item3";
+  gap: 2rem;
+}
+.grid .grid-item {
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem;
+}
+.grid .grid-item h5 {
+  color: white;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 3px black;
+}
+.grid .grid-item1 {
+  grid-area: item1;
+  background-image: url("../asset/img/MEN.jpg");
+  height: 400px;
+}
+.grid .grid-item2 {
+  grid-area: item2;
+  background-image: url("../asset/img/Naturales.jpg");
+}
+.grid .grid-item3 {
+  grid-area: item3;
+  background-image: url("../asset/img/-manos-nino.jpg");
+}
+
+.summer {
+  padding: 6rem;
+  padding-top: 0;
+}
+.summer .titles {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.summer .cards {
+  display: flex;
+}
+.summer .cards .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.summer .cards .card img {
+  max-width: 100%;
+}
+.summer .cards .card h3 {
+  font-size: 0.8rem;
+}
+.summer .cards .card p {
+  font-family: Helvetica, sans-serif;
+  width: 75%;
+  text-align: center;
+}
+.summer .cards .card a {
+  text-align: center;
+}
+.summer .cards .card a:hover {
+  background-color: #fd8f41;
+  transition: all 0.3s;
+}
+
+.section-bottom {
+  background-image: url("../asset/img/campo-lavanda-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding-block: 10rem;
+  margin-bottom: 4rem;
+}
+.section-bottom .section-bottom-text {
+  text-align: center;
+}
+.section-bottom .section-bottom-text h3 {
+  color: white;
+  font-size: 3rem;
+}
+.section-bottom .section-bottom-text h4 {
+  color: white;
+  font-size: 2rem;
+}
+
+.about-top {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.about-us {
+  display: flex;
+  padding: 2rem;
+}
+.about-us h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.about-us p {
+  padding: 2rem;
+}
+.about-us .quienes-somos-img {
+  width: 500px;
+}
+
+.main-bootom {
+  background-color: #ffbf91;
+  color: white;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+.main-bootom p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.nosotros {
+  display: flex;
+  padding: 2rem;
+}
+.nosotros h3 {
+  margin-left: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.nosotros p {
+  padding: 2rem;
+}
+.nosotros .nosotros-img {
+  width: 500px;
+}
+
+.productos-section-top .productos-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 3rem;
+}
+.productos-section-top .productos-title p {
+  font-family: "Handlee", cursive;
+  color: #000000;
+  font-size: 1rem;
+  margin: 2rem;
+}
+.productos-section-top .container-boton {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8rem 0 8rem;
+}
+.productos-section-top .container-boton .boton-categoria {
+  background-color: #fd8f41;
+  width: 100%;
+}
+.productos-section-top .container-boton .boton-categoria:hover {
+  background-color: #ffbf91;
+}
+.productos-section-top .productos {
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.productos-section-top .productos .producto {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.productos-section-top .productos .producto img {
+  width: 300px;
+}
+.productos-section-top .productos .producto h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.productos-section-top .productos .producto .producto-agregar {
+  background-color: #fd8f41;
+}
+.productos-section-top .productos .producto .producto-agregar:hover {
+  transition: all 0.3s;
+}
+
+.plantaciones-top {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.plantaciones {
+  display: flex;
+  padding: 2rem;
+}
+.plantaciones h3, .plantaciones h4, .plantaciones h5 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+.plantaciones p {
+  padding: 2rem;
+}
+.plantaciones .plantaciones-img {
+  width: 500px;
+}
+
+.plantaciones-bottom {
+  display: flex;
+  padding: 2rem;
+}
+.plantaciones-bottom img {
+  width: 500px;
+}
+.plantaciones-bottom .plantaciones-botom-text h6 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 2rem;
+}
+.plantaciones-bottom .plantaciones-botom-text p {
+  padding: 2rem;
+}
+
+.contacto-top h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 3rem;
+  margin-top: 1.5rem;
+}
+
+.contacto {
+  display: flex;
+  padding: 2rem;
+}
+
+.btn {
+  background-color: #ffbf91;
+  color: white;
+  font-size: 1rem;
+}
+
+.carrito-top {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.carrito-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.carrito-container .carrito-vacio {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-bottom: 14rem;
+}
+.carrito-container .carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 5rem 3rem 5rem;
+}
+.carrito-container .carrito-productos .carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+.carrito-container .carrito-productos .carrito-producto .carrito-producto-imagen {
+  width: 5rem;
+  border-radius: 1rem;
+}
+.carrito-container .carrito-productos .carrito-producto .carrito-producto-nombre small {
+  font-size: 0.75rem;
+}
+.carrito-container .carrito-productos .carrito-producto .carrito-producto-eliminar {
+  border: 0;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+.carrito-container .carrito-productos .carrito-producto .carrito-producto-eliminar:hover {
+  border: 0;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+}
+.carrito-container .carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 6rem 3rem 6rem;
+}
+.carrito-container .carrito-acciones .carrito-acciones-vaciar {
+  border: 0;
+  background-color: #fbe5d5;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.carrito-container .carrito-acciones .carrito-acciones-vaciar:hover {
+  border: 0;
+  color: #fbe5d5;
+  background-color: #ffbf91;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.carrito-container .carrito-acciones .carrito-acciones-der {
+  display: flex;
+}
+.carrito-container .carrito-acciones .carrito-acciones-der .carrito-acciones-total {
+  display: flex;
+  background-color: #fbe5d5;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  gap: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.carrito-container .carrito-acciones .carrito-acciones-der .carrito-acciones-comprar {
+  border: 0;
+  background-color: #ffbf91;
+  padding: 1rem;
+  cursor: pointer;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.carrito-container .carrito-acciones .carrito-acciones-der .carrito-acciones-comprar:hover {
+  border: 0;
+  background-color: #ffbf91;
+  color: #fbe5d5;
+  padding: 1rem;
+  cursor: pointer;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.carrito-container .carrito-comprado {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 14rem;
+}
+.carrito-container .carrito-comprado i {
+  color: #ffbf91;
+}
+.carrito-container .disabled {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffbf91;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding: 1.5rem;
+  padding-top: 0;
+}
+.footer .footer-top {
+  display: flex;
+  padding-block: 2rem;
+}
+.footer .footer-top div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .footer-top .adress {
+  align-items: flex-end;
+  margin-top: 4rem;
+}
+.footer .footer-top .adress a {
+  color: white;
+}
+.footer .footer-top h4 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+.footer .footer-bottom p {
+  font-size: 0.8rem;
+}
+.footer .footer-bottom p a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-bottom .icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.footer .footer-bottom .icons a {
+  width: 2rem;
+  color: white;
+}
+
+.body-404 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.body-404 .container-404 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.body-404 .container-404 .img-404 {
+  width: 30%;
+}
+.body-404 .container-404 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 20px;
+}
+.body-404 .container-404 .btn-404 {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 2rem 4rem;
+  border-radius: 0.5rem;
+}
+
+/** Media Query **/
+@media screen and (max-width: 1024px) {
+  /* --------INDEX--------- */
+  .section-content-image {
+    display: flex;
+    align-items: center;
+  }
+  .summer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .summer .titles {
+    padding-bottom: 2rem;
+  }
+  .summer .titles h2 {
+    margin-top: 1rem;
+  }
+  .summer .cards {
+    display: flex;
+  }
+  .summer .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .summer .cards .card img {
+    max-width: 100%;
+  }
+  .summer .cards .card h3 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .summer .cards .card p {
+    font-family: Helvetica, sans-serif;
+    width: 75%;
+    text-align: center;
+  }
+  /* --------Conoce IKKA--------- */
+  .about-us {
+    display: flex;
+    padding: 1rem;
+  }
+  .about-us h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .about-us p {
+    padding: 2rem;
+  }
+  .about-us .quienes-somos-img {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  .nosotros {
+    display: flex;
+    padding: 1rem;
+  }
+  .nosotros h3 {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .nosotros p {
+    padding: 2rem;
+  }
+  .nosotros .nosotros-img {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  /* --------Productos--------- */
+  .productos-section-top .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+    padding: 0;
+  }
+  /* --------Plantaciones--------- */
+  .plantaciones {
+    display: flex;
+    padding: 1rem;
+  }
+  .plantaciones h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .plantaciones p {
+    padding: 2rem;
+  }
+  .plantaciones .plantaciones-img {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  .plantaciones-bottom {
+    display: flex;
+    padding: 1rem;
+  }
+  .plantaciones-bottom h3 {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .plantaciones-bottom p {
+    padding: 2rem;
+  }
+  .plantaciones-bottom .aceite-escencial-img {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  /* --------Footer--------- */
+  .footer .footer-top h4 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* --------INDEX--------- */
+  .header .class-menu .checkbtn {
+    display: block;
+  }
+  .header .class-menu .checkbtn .menu-icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .header .class-menu .menu-list {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background: #fedea7;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .header .class-menu .menu-list li {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .header .class-menu #check:checked ~ ul {
+    left: 0;
+    transition: all 0.25s;
+  }
+  .section-top {
+    flex-direction: column;
+    padding-inline: 2rem;
+    background-size: cover;
+  }
+  .section-top .section-top-text h1 {
+    font-size: 3rem;
+  }
+  .section-top .section-top-text h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-content .section-content-text {
+    text-align: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .section-content .section-content-text img {
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    width: 65px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .grid .grid-item1 {
+    width: 100%;
+  }
+  .grid .grid-item1 h5 {
+    color: white;
+    font-size: 2rem;
+    text-align: start;
+    margin: 0;
+    text-shadow: 1px 1px 3px black;
+  }
+  .summer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .summer .titles {
+    padding-bottom: 2rem;
+  }
+  .summer .titles h2 {
+    margin-top: 1rem;
+  }
+  .summer .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-bottom .section-bottom-text h3 {
+    font-size: 2rem;
+  }
+  .section-bottom .section-bottom-text h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  /* --------Conoce IKKA--------- */
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-us h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .about-us p {
+    padding: 2rem;
+  }
+  .about-us .quienes-somos-img {
+    width: 80vw;
+    margin-top: 1rem;
+  }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .nosotros h3 {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .nosotros p {
+    padding: 2rem;
+  }
+  .nosotros .nosotros-img {
+    width: 80vw;
+    margin-top: 1rem;
+  }
+  /* --------Productos--------- */
+  .productos-section-top .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+  .productos-section-top .productos .productos img {
+    width: 50%;
+  }
+  /* --------Plantaciones--------- */
+  .plantaciones-top {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  .plantaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .plantaciones h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .plantaciones p {
+    padding: 2rem;
+  }
+  .plantaciones .plantaciones-img {
+    width: 80vw;
+    margin-top: 1rem;
+  }
+  .plantaciones-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .plantaciones-bottom h3 {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .plantaciones-bottom p {
+    padding: 2rem;
+  }
+  .plantaciones-bottom .aceite-escencial-img {
+    width: 80vw;
+    margin-top: 1rem;
+  }
+  /* --------Footer--------- */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* --------404--------- */
+  .body-404 .container-404 .img-404 {
+    width: 50%;
+  }
+  .body-404 .container-404 h1 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* --------INDEX--------- */
+  .section-top {
+    flex-direction: column;
+    padding-inline: 2rem;
+    background-size: cover;
+  }
+  .section-top .section-top-text h1 {
+    font-size: 1.5rem;
+  }
+  .section-top .section-top-text h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-content .section-content-text {
+    text-align: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .section-content .section-content-text a {
+    text-decoration: none;
+    background-color: #ffbf91;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 4rem;
+    border-radius: 0.5rem;
+  }
+  .section-content .section-content-text img {
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    width: 65px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .grid h5 {
+    color: white;
+    font-size: 1rem;
+    text-align: start;
+    margin: 0;
+    text-shadow: 1px 1px 3px black;
+  }
+  .grid .grid-item1 {
+    width: 100%;
+  }
+  .summer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .summer .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-bottom .section-bottom-text h3 {
+    font-size: 2rem;
+  }
+  .section-bottom .section-bottom-text h4 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  /* --------Conoce IKKA--------- */
+  .main-bootom {
+    background-color: #ffbf91;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  .main-bootom p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  /* --------Productos--------- */
+  .productos-section-top .productos-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  .productos-section-top .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+  .productos-section-top .productos .productos img {
+    width: 50%;
+  }
+  /* --------Plantaciones--------- */
+  .main-bootom {
+    background-color: #ffbf91;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  .main-bootom p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  /* --------Footer--------- */
+  .footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .footer .footer-top h4 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .footer .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* --------404--------- */
+  .body-404 .container-404 .img-404 {
+    width: 50%;
+  }
+  .body-404 .container-404 h1 {
+    display: none;
+  }
+}/*# sourceMappingURL=estilo.css.map */

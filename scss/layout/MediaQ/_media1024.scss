@@ -1,0 +1,145 @@
+@media screen and (max-width: 1024px) {
+
+    /* --------INDEX--------- */
+.section-content-image{
+        display: flex;
+        align-items: center;
+    }
+
+    .summer{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .titles{
+            padding-bottom: 2rem;
+
+            h2{
+                margin-top: 1rem;
+            }
+        }
+        .cards{
+            display: flex;
+
+            .card{
+        
+                display: flex;
+                @include align(column,center);
+                gap: .7rem;
+                margin-bottom: 1rem;
+
+                img{
+                    max-width: 100%;
+                }
+                h3{
+                    font-size:.8rem;
+                    text-align: center;
+                }
+                p{
+                    font-family:$mainFontSecundary;
+                    width: 75%;
+                    text-align: center;
+                }
+                a{
+                    @extend %botones;
+                }
+            }
+        }
+    }
+
+            /* --------Conoce IKKA--------- */
+
+            .about-us{
+                display: flex;
+                padding: 1rem;
+            
+                h3{
+                    @include tamano(600,1.4rem);
+                }
+            
+                p{
+                    padding: 2rem;
+                }
+            
+                .quienes-somos-img{
+                    width: 300px;
+                    margin-top: 1rem;
+                }
+            }
+            .nosotros{
+                display: flex;
+                padding: 1rem;
+            
+                h3{
+                    margin-left: 1rem;
+                    @include tamano(600,1.4rem);
+                }
+            
+                p{
+                    padding: 2rem;
+                }
+            
+                .nosotros-img{
+                    width: 300px;
+                    margin-top: 1rem;
+                }
+            }
+
+        /* --------Productos--------- */
+.productos-section-top{
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.8rem;
+        padding: 0;
+    }
+}
+
+/* --------Plantaciones--------- */
+
+.plantaciones{
+    display: flex;
+    padding: 1rem;
+
+    h3{
+        @include tamano(600,1.4rem);
+    }
+
+    p{
+        padding: 2rem;
+    }
+
+    .plantaciones-img{
+        width: 300px;
+        margin-top: 1rem;
+    }
+}
+.plantaciones-bottom{
+    display: flex;
+    padding: 1rem;
+
+    h3{
+        margin-left: 1rem;
+        @include tamano(600,1.4rem);
+    }
+
+    p{
+        padding: 2rem;
+    }
+
+    .aceite-escencial-img{
+        width: 300px;
+        margin-top: 1rem;
+    }
+}
+
+    /* --------Footer--------- */
+.footer{
+    .footer-top{
+        h4{
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}
+}
+}

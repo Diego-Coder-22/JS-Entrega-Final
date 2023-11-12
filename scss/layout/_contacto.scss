@@ -1,0 +1,20 @@
+.contacto-top{
+    h2{
+        @include tamano(700,2.3rem);
+        text-align: center;
+        margin: 3rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.contacto{
+    display: flex;
+    padding: 2rem;
+
+}
+
+.btn{
+    background-color:$mainColor;
+    color: white;
+    font-size: 1rem;
+}

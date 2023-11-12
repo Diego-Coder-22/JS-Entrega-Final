@@ -1,0 +1,14 @@
+@mixin tamano($weight, $size){
+    font-weight:$weight;
+    font-size: $size
+}
+
+@mixin flex($direction,$justify){
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin align($direction,$align){
+    flex-direction: $direction;
+    align-items: $align;
+}

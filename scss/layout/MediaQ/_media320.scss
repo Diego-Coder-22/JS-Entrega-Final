@@ -1,0 +1,165 @@
+@media screen and (max-width: 320px) {
+
+    /* --------INDEX--------- */
+    .section-top{
+        flex-direction: column;
+        padding-inline: 2rem;
+        background-size: cover;
+
+        .section-top-text{
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+                margin: 1rem 0;
+            }
+        }
+    }
+    .section-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .section-content-text{
+            text-align: center;
+            gap: 1rem;
+            padding: 0;
+
+            a{
+                text-decoration: none;
+                background-color: #ffbf91;
+                color: white;
+                padding: 1rem;
+                margin: 2rem 4rem;
+                border-radius: 0.5rem;
+            }
+            img{
+                justify-content: space-between;
+                text-align: center;
+                margin: 0;
+                width: 65px;
+            }
+        }
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        h5{ 
+            color:white;
+            font-size: 1rem;
+            text-align: start;
+            margin: 0;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .grid-item1 {
+            width: 100%;
+        }
+    }
+    .summer{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+        }
+    }
+    .section-bottom{
+        .section-bottom-text{
+            h3{
+                font-size: 2rem;
+        }
+
+        h4{
+            font-size: 1rem;
+            margin: 1rem 0;
+    }
+        }
+    }
+
+    /* --------Conoce IKKA--------- */
+
+    .main-bootom{
+        background-color:$mainColor;
+        color: white;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+
+    /* --------Productos--------- */
+
+    .productos-section-top{
+
+        .productos-title {
+            @include tamano(600,1.3rem);
+            text-align: center;
+            margin: 1rem;
+        }
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 1rem;
+            padding: 0;
+    
+            .productos img{
+                width: 50%;
+                }
+        }
+    }
+
+     /* --------Plantaciones--------- */
+
+     .main-bootom{
+        background-color:$mainColor;
+        color: white;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+
+    /* --------Footer--------- */
+    .footer{
+        .footer-top{
+            @include align(column,center);
+            margin: 0;
+
+            h4{
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+        }
+
+        .footer-bottom{
+            @include align(column,center);
+            gap: 2rem;
+        }
+    }
+    /* --------404--------- */
+.body-404{
+    .container-404{
+        .img-404{
+            width: 50%;
+        }
+    h1{
+    display: none;
+    }
+    }
+}
+}

@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="shortcut icon" href="../asset/img/Logo Ikka.svg" type="image/x-icon">
+    <meta name="description" content="Conoce quienes somos y visita nuestra granja de producción">
+    <meta name="keywords" content="aceites, esenciales, lavanda, aloe, sensible, piel, cuidado, familia, ecologicos, productores">
+    <meta name="author" content="Diego Fernández">
+    <meta name="copyright" content="IKKA S.A">
+
+    
+    <meta property="og:title" content="IKKA">
+    <meta property="og:site_name" content= "IKKA - Aceites Esenciales">
+    <meta property="og:url" content="https://diego-coder-22.github.io/ikka-43055/pages/carrito.html">
+    <meta property="og:description" content="Visitá nuestra granja Ecológica. Conocer nuestra historia tambien nos acerca un poco a conectar mas con nuestros clientes".>
+    <meta property="og:type" content=website>
+    <meta property="og:image" content="https://images.unsplash.com/photo-1474692321929-4d0c27302b7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFjZWl0ZXMlMjBlc2VuY2lhbGVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../scss/estilo.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="../index.html"><img class="logo" src="../asset/img/Logo Ikka.svg" alt="logo"></a>
+        </div>
+        <nav class="class-menu">
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="../asset/img/menú-burger.svg" alt="Menu-Burger"></i>
+            </label>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="./productos.html"><img class="logo-li" src="../asset/img/volver.svg" alt="vovler">SEGUIR COMPRANDO</a></li>
+                <li class="menu-item boton-carrito active">
+                    <a href="#"><img class="logo-li" src="../asset/img/carrito.svg" alt="carrito">CARRITO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="carrito-top">
+            <h2>Carrito</h2>
+        </div>
+        <section class="carrito-container">
+            <div>
+                <p id="carrito-vacio" class="carrito-vacio disabled">Tu carrito está vacio.</p>
+            </div>
+            <div id="carrito-productos" class="carrito-productos disabled">
+
+                
+            </div>            
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-der">
+                    <div class="carrito-acciones-vaciar">Vaciar carrito</div>
+                </div>
+                <div class="carrito-acciones-der">
+                    <button class="carrito-acciones-comprar">Comprar Ahora</button>
+                    <div class="carrito-acciones-total">
+                        <p>Total :</p>
+                        <p id="total">$3000</p>
+                    </div>
+                </div>
+            </div>
+
+            <p id="carrito-comprado" class="carrito-comprado disabled"><i class="bi bi-check-circle-fill"></i> Muchas Gracias por tu compra. <br>En breve nos pondremos en contacto para coordinar el envio.</p>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div>
+                    <h4>IKKA ACEITES ESENCIALES</h4>
+                    <p>En IKKA nos comprometemos con el medio ambiente y queremos que vos tambien seas parte de nuestro compromiso.</p>
+                </div>
+                <div class="adress">
+                    <p><a href="https://www.google.es/maps/place/50000+Salto,+Departamento+de+Salto,+Uruguay/@-31.3905751,-57.9798871,13z/data=!3m1!4b1!4m6!3m5!1s0x95addd27e22982a9:0x68fc0fac8ca73bc7!8m2!3d-31.3879469!4d-57.961187!16zL20vMDZ4azg5?entry=ttu" target="_blank"><i class="bi bi-geo-alt-fill"></i></a> Caramuru 0000 Montevideo, Uruguay</p>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZXhnWjxBjjBcmdzlWhxwNGSKFhwtbKPXbWKdpFPSXcggbGnSBKJlQkbRbHgpmcfGHNWrL" target="_blank"><i class="bi bi-envelope"></i></a> ikka_cosmetica@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 IKKA "Cosmética Natural". Todos los derechos reservados. <a href="../pages/error404.html" target="_blank"> Página creada por Voodoo</a></p>
+                <div class="icons">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/main.js"></script>
+</body>

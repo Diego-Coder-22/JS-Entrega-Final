@@ -1,0 +1,52 @@
+.about-top{
+    @include tamano(600,1.6rem);
+    text-align: center;
+    margin: 3rem;
+}
+
+.about-us{
+    display: flex;
+    padding: 2rem;
+
+    h3{
+        @include tamano(600,1.4rem);
+    }
+
+    p{
+        padding: 2rem;
+    }
+
+    .quienes-somos-img{
+        width: 500px;
+    }
+}
+
+.main-bootom{
+    background-color:$mainColor;
+    color: white;
+    margin-bottom: 3rem;
+    padding: 2rem;
+
+    p{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.nosotros{
+    display: flex;
+    padding: 2rem;
+
+    h3{
+        margin-left: 1rem;
+        @include tamano(600,1.4rem);
+    }
+
+    p{
+        padding: 2rem;
+    }
+
+    .nosotros-img{
+        width: 500px;
+    }
+}

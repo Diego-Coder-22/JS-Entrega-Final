@@ -1,0 +1,44 @@
+
+.plantaciones-top{
+    @include tamano(600,1.6rem);
+    text-align: center;
+    margin: 3rem;
+}
+
+.plantaciones{
+    display: flex;
+    padding: 2rem;
+
+    h3, h4, h5{
+        @include tamano(600,1.4rem);
+        margin-left: 2rem;
+    }
+
+    p{
+        padding: 2rem;
+    }
+
+    .plantaciones-img{
+        width: 500px;
+    }
+}
+
+.plantaciones-bottom{
+    display: flex;
+    padding: 2rem;
+    
+    img{
+        width: 500px;
+    }
+    .plantaciones-botom-text{
+        h6{
+            @include tamano(600,1.4rem);
+            margin: 2rem;
+        }
+
+        p{
+            padding: 2rem;
+        }
+    }
+    
+}

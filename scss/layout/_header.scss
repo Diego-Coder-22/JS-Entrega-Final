@@ -1,0 +1,54 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    .logo{
+        width: 6rem;
+    }
+
+    .class-menu{
+        #check{
+            display: none;
+        }
+        .checkbtn{
+            .menu-icon{
+                display: none;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 2px;
+                }
+            } 
+        }
+
+        .menu-list{
+            font-weight: 600;
+            font-size: .8rem;
+            text-align: center;
+            list-style: none;
+            display: flex;
+            gap:2rem;
+
+            .menu-item {
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .logo-li{
+                        width: 2rem;
+                    }
+                }
+                a:hover{
+                    color: #ffbf91;
+                }
+            }
+        }
+    }
+}

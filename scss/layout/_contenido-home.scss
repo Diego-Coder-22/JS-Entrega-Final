@@ -1,0 +1,155 @@
+.section-top{
+    background-image: url("../asset/img/aceites.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-block: 10rem;
+    
+    .section-top-text{
+        text-align: center;
+
+        h1 {
+            color: white;
+            font-size: 4rem;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        h2 {
+            font-family: 'Handlee', cursive;
+            color: $mainColor;
+            font-size: 3rem;
+            text-shadow: 1px 1px 3px black;
+        }
+    }
+}
+.section-content{
+    display: flex;
+    padding: 2rem;
+
+    .section-content-text{
+        h3{
+            @include tamano(600,1.5rem);
+            margin: 2rem;
+            margin-bottom: 1rem;
+        }
+        img{
+            margin-left: 6rem;
+        }
+        p{
+            padding: 2rem;
+        }
+        a{
+            @extend %botones;
+        }
+        a:hover{
+            background-color:#fd8f41;
+            transition: all .3s;
+        }
+    }
+
+    .section-content-image{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.grid{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+    gap: 2rem;
+
+    .grid-item{
+        border-radius: 1rem;
+        background-size: cover;
+        background-position: center center;
+        padding: 2rem;
+
+        h5{ 
+            color:white;
+            font-size: 1.6rem;
+            text-shadow: 1px 1px 3px black;
+            ;
+        } 
+    }
+    .grid-item1{
+        grid-area: item1;
+        background-image: url("../asset/img/MEN.jpg");
+        height: 400px;
+    }
+    .grid-item2{
+        grid-area: item2;
+        background-image: url("../asset/img/Naturales.jpg");
+    }
+    .grid-item3{
+        grid-area: item3;
+        background-image: url("../asset/img/-manos-nino.jpg");
+    }
+}
+
+.summer{
+    padding: 6rem;
+    padding-top: 0;
+
+    .titles{
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+    .cards{
+        display: flex;
+
+        .card{
+            flex: 1;
+            display: flex;
+            @include align(column, center);
+            gap: .7rem;
+            img{
+                max-width: 100%;
+            }
+            h3{
+                font-size:.8rem;
+            }
+            p{
+                font-family:$mainFontSecundary;
+                width: 75%;
+                text-align: center;
+            }
+            a{
+                @extend %botones;
+                text-align: center;
+            }
+            a:hover{
+                background-color:#fd8f41;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+.section-bottom{
+    background-image: url("../asset/img/campo-lavanda-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-block: 10rem;
+    margin-bottom: 4rem;
+
+    .section-bottom-text{
+        text-align: center;
+
+        h3 {
+            color: white;
+            font-size: 3rem;
+        }
+        h4 {
+            color: white;
+            font-size: 2rem;
+        }
+    }
+}

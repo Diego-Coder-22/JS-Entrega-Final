@@ -1,0 +1,252 @@
+[
+    {
+        "id":"Aceite-ajedrea",
+        "titulo":"Aceite de Ajedrea",
+        "imagen": "../asset/img/Productos/aceite-esencial-ajedrea.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 410
+    },
+    {
+        "id":"Aceite-albahaca",
+        "titulo":"Aceite de Albahaca",
+        "imagen": "../asset/img/Productos/aceite-esencial-albahaca.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 360
+    },
+    {
+        "id":"Aceite-arbol-de-te",
+        "titulo":"Aceite de Arbol de Te",
+        "imagen": "../asset/img/Productos/aceite-esencial-arbol-de-te.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 325
+    },
+    {
+        "id":"Aceite-bergamota",
+        "titulo":"Aceite de Bergamota",
+        "imagen": "../asset/img/Productos/aceite-esencial-bergamota.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 355
+    },
+    {
+        "id":"Aceite-canela",
+        "titulo":"Aceite de Canela",
+        "imagen": "../asset/img/Productos/aceite-esencial-canela.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 475
+    },
+    {
+        "id":"Aceite-hinojo",
+        "titulo":"Aceite de Hinojo",
+        "imagen": "../asset/img/Productos/aceite-esencial-hinojo.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 375
+    },
+    {
+        "id":"Aceite-lavanda",
+        "titulo":"Aceite de Lavanda",
+        "imagen": "../asset/img/Productos/aceite-esencial-lavanda-1.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 380
+    },
+    {
+        "id":"Aceite-naranja",
+        "titulo":"Aceite de Naranja",
+        "imagen": "../asset/img/Productos/aceite-esencial-naranja-1.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 310
+    },
+    {
+        "id":"Aceite-jengibre",
+        "titulo":"Aceite de Jengibre",
+        "imagen": "../asset/img/Productos/aceite-esencial-jengibre-1.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 350
+    },
+    {
+        "id":"Aceite-limon",
+        "titulo":"Aceite de Limón",
+        "imagen": "../asset/img/Productos/aceite-esencial-limon-1.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 290
+    },
+    {
+        "id":"Aceite-mandarina",
+        "titulo":"Aceite de Mandarina",
+        "imagen": "../asset/img/Productos/aceite-esencial-mandarina-1.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 320
+    },
+    {
+        "id":"Aceite-manzanilla",
+        "titulo":"Aceite de Manzanilla",
+        "imagen": "../asset/img/Productos/aceite-esencial-manzanilla-1.jpg",
+        "categoria": {
+            "nombre": "Aceites Esenciales",
+            "id":"aceites"
+        },
+        "precio": 340
+    },
+    {
+        "id":"Locion-celulitis",
+        "titulo":"Loción Corporal Celulitis",
+        "imagen": "../asset/img/Productos/aceite-corporal-celulitis-1.jpg",
+        "categoria": {
+            "nombre": "Lociones Corporales",
+            "id":"locion"
+        },
+        "precio": 550
+    },
+    {
+        "id":"Locion-estrias",
+        "titulo":"Loción Corporal Estrias",
+        "imagen": "../asset/img/Productos/aceite-corporal-estrias-1.jpg",
+        "categoria": {
+            "nombre": "Lociones Corporales",
+            "id":"locion"
+        },
+        "precio": 570
+    },
+    {
+        "id":"Locion-hidratante",
+        "titulo":"Loción Corporal Hidratante",
+        "imagen": "../asset/img/Productos/aceite-corporal-hidratante-1.jpg",
+        "categoria": {
+            "nombre": "Lociones Corporales",
+            "id":"locion"
+        },
+        "precio": 650
+    },
+    {
+        "id":"Locion-piernas-relax",
+        "titulo":"Loción Corporal Piernas Relax",
+        "imagen": "../asset/img/Productos/aceite-corporal-piernas-relax.jpg",
+        "categoria": {
+            "nombre": "Lociones Corporales",
+            "id":"locion"
+        },
+        "precio": 470
+    },
+    {
+        "id":"Locion-relajante",
+        "titulo":"Loción Corporal Relajante",
+        "imagen": "../asset/img/Productos/aceite-corporal-relajante-1.jpg",
+        "categoria": {
+            "nombre": "Lociones Corporales",
+            "id":"locion"
+        },
+        "precio": 535
+    },
+    {
+        "id":"Locion-sensual",
+        "titulo":"Loción Corporal Sensual",
+        "imagen": "../asset/img/Productos/aceite-corporal-sensual-1.jpg",
+        "categoria": {
+            "nombre": "Lociones Corporales",
+            "id":"locion"
+        },
+        "precio": 575
+    },
+    {
+        "id":"Agua-floral-geranio",
+        "titulo":"Agua Floral Geranio",
+        "imagen": "../asset/img/Productos/agua-floral-geranio.jpg",
+        "categoria": {
+            "nombre": "Aguas Florales",
+            "id":"agua"
+        },
+        "precio": 650
+    },
+    {
+        "id":"Agua-floral-hisopo",
+        "titulo":"Agua Floral Hisopo",
+        "imagen": "../asset/img/Productos/agua-floral-hisopo-2.jpg",
+        "categoria": {
+            "nombre": "Aguas Florales",
+            "id":"agua"
+        },
+        "precio": 725
+    },
+    {
+        "id":"Agua-floral-manzanilla",
+        "titulo":"Agua Floral de Manzanilla",
+        "imagen": "../asset/img/Productos/agua-floral-manzanilla.jpg",
+        "categoria": {
+            "nombre": "Aguas Florales",
+            "id":"agua"
+        },
+        "precio": 625
+    },
+    {
+        "id":"Agua-floral-mejorana",
+        "titulo":"Agua Floral de Mejorana",
+        "imagen": "../asset/img/Productos/agua-floral-mejorana-1.jpg",
+        "categoria": {
+            "nombre": "Aguas Florales",
+            "id":"agua"
+        },
+        "precio": 680
+    },
+    {
+        "id":"Agua-floral-menta",
+        "titulo":"Agua Floral de Menta",
+        "imagen": "../asset/img/Productos/agua-floral-menta.jpg",
+        "categoria": {
+            "nombre": "Aguas Florales",
+            "id":"agua"
+        },
+        "precio": 730
+    },
+    {
+        "id":"Agua-floral-romero",
+        "titulo":"Agua Floral de Romero",
+        "imagen": "../asset/img/Productos/agua-floral-romero.jpg",
+        "categoria": {
+            "nombre": "Aguas Florales",
+            "id":"agua"
+        },
+        "precio": 740
+    },
+    {
+        "id":"Agua-floral-rosas",
+        "titulo":"Agua Floral de Rosas",
+        "imagen": "../asset/img/Productos/agua-floral-rosas-1.jpg",
+        "categoria": {
+            "nombre": "Agua Florales",
+            "id":"agua"
+        },
+        "precio": 780
+    }
+]

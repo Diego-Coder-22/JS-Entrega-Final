@@ -1,0 +1,61 @@
+@mixin flex($direction,$justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color:$mainColor; 
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    padding: 1.5rem;
+    padding-top: 0;
+
+    .footer-top{
+        display: flex;
+        padding-block: 2rem;
+
+        & div{
+            flex: 1;
+            @include flex(column, center)
+        }
+
+        .adress{
+            align-items: flex-end;
+            margin-top:4rem;
+
+            a{
+                color: white;
+            }
+        }
+
+        h4{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: .5rem;
+        p{
+            font-size: .8rem;
+           a{
+            text-decoration: none;
+            color:white;
+           }
+        }
+        .icons{
+            display: flex;
+            gap:.5rem;
+        
+            a{
+                width: 2rem;
+                color: white;
+            }
+        }
+    }
+}

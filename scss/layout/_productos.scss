@@ -1,0 +1,64 @@
+.productos-section-top{
+    .productos-title {
+        @include tamano(600,1.6rem);
+        text-align: center;
+        margin: 3rem;
+
+        p {
+            font-family: 'Handlee', cursive;
+            color: #000000;
+            font-size: 1rem;
+            margin: 2rem;
+        }
+    }
+    .container-boton{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8rem 0 8rem;
+
+
+        .boton-categoria{
+            @extend %botones;
+            background-color:#fd8f41;
+            width: 100%;
+        }
+        .boton-categoria.active{
+            @extend %botones;
+        }
+        .boton-categoria:hover{
+            background-color: #ffbf91;
+        }
+    }
+    .productos{
+        padding: 8rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+
+        .producto{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            @include flex (column,center);
+
+
+            img{
+                width: 300px;
+            }
+
+            h3{
+                @include tamano(400,1rem);
+            }
+
+            .producto-agregar{
+                @extend %botones;
+                background-color:#fd8f41;
+                }
+
+                .producto-agregar:hover{
+                    @extend %botones;
+                transition: all .3s;
+            }
+        }
+    }
+}
